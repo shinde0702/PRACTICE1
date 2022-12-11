@@ -1,38 +1,39 @@
-/*function fun3(){
-    console.log('vishal')
-    }
+// function fun1(){
+//     console.log('abhijeet')
+// }
+// fun1()
 
-//
-function fun1(){
-    console.log('abhijeet')
-}
-fun1()
+// function fun3(){
+//     console.log('vishal')
+//     }
+
+// setTimeout(fun3,1000)
+ 
+// function fun2(){
+//     console.log('arbaaz')
+// }
+// fun2()
 
 
-//  
-function fun2(){
-    console.log('arbaaz')
-}
-fun2()
-//
 
-setTimeout(fun3,1000)
-*/
+
+
 
 //sync callback function
 
 function fun(callback) {
 
-    (callback)
+    callback()
 
-    console.log('welcome to callback')
+    console.log('sync callback function')
 }
+
 fun(fun1)
 
 function fun1() {
-
-    console.log('Welcome to learn js')
+    console.log('Welcome to learn ')
 }
+ 
 
 // async callback function
 
