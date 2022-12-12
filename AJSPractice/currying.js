@@ -14,3 +14,5 @@ function fun(a) {
 
 let i=fun(5)(3)(4) //curring
 console.log(i)
+
+

@@ -10,3 +10,16 @@ function fun() {
     console.log(number)
 }
 fun()
+
+
+function abhi() {
+    let num1 = 20;
+
+    function vishal() {
+        num1 = num1 + 10
+        console.log("clouser", num1)
+    }
+    vishal()
+    console.log(num1)
+}
+abhi()
