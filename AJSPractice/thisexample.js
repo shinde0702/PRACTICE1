@@ -26,3 +26,5 @@ function teacher(){
 console.log(this)
 }
 let t1=new teacher
+
+
