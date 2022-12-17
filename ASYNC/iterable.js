@@ -6,21 +6,57 @@
 //       5.next function must return an object which contains(value:'hello',done:true)
 
 
-let emp = {
+// let emp = {
+
+//     [Symbol.iterator]: function () {
+//         count = 0
+//         let iterator = {
+
+//             next: function () {
+//                 count++
+//                 if (count < 5) {
+//                     return { value: 'hello', done: true }
+
+//                 }
+//                 else {
+//                     return { value: 'hello', done: false }
+//                 }
+//             }
+
+//         }
+
+//         return iterator;
+//     }
+
+// }
+// for (t of emp) {
+//     console.log(t)
+// }
+
+
+// function*fun(){
+
+//     yield "a";
+//     yield "b";
+//     yield "c";
+//     yield "d"
+// }
+
+// let gen= fun()
+
+// for(v of gen){
+//     console.log(v)
+// }
+
+
+let abhi = {
 
     [Symbol.iterator]: function () {
-        count = 0
+
         let iterator = {
 
             next: function () {
-                count++
-                if (count < 5) {
-                    return { value: 'hello', done: true }
-
-                }
-                else {
-                    return { value: 'hello', done: false }
-                }
+                return { value: 'hello', done: true }
             }
 
         }
@@ -29,21 +65,27 @@ let emp = {
     }
 
 }
-for (t of emp) {
-    console.log(t)
+
+for (a of abhi) {
+    console.log(a)
 }
 
 
-function*fun(){
+let abhijeet =
+{
+    [Symbol.iterator]: function () {
 
-    yield "a";
-    yield "b";
-    yield "c";
-    yield "d"
+        let iterator = {
+            next:function(){
+                return{value:'hi',done:true}
+            }
+        }
+
+        return iterator;
+    }
+
 }
 
-let gen= fun()
-
-for(v of gen){
-    console.log(v)
+for(b of abhijeet){
+    console.log(b)
 }
