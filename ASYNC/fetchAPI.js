@@ -1,20 +1,21 @@
-async function fetchProducts() {
+async function fetchPriduct() {
 
-    let fetchResponse$ = await fetch("https://fakestoreapi.com/products")
+    let fetchResponse$ = await fetch('https://fakestoreapi.com/products')
 
     let data$ = fetchResponse$.json();
+
     data$.then((products) => {
+        showproducts(products);  
 
-        showProducts(products);
-    })
-
+    });
 }
 
-function showProducts(products) {
-   for(i=0; i<products.length - 1; i++){
+function showproducts(products) {
+    for (i = 1; i < products.length - 1; i++) {
+        document.write(products[i].id+"&nbsp&nbsp&nbsp"+products[i].title+"nbsp&nbsp&nbsp&nbsp"+products[i].price+"<br>");
 
-    document.write(product[i].id + " &nbSP&nbSP&nbSP"+ product[i].title + "" + product[i].image);
-   }
+    }
+
 }
+fetchPriduct();
 
-fetchProducts();
